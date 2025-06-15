@@ -49,20 +49,7 @@ The chatbox connects to OpenAI’s GPT-3.5 via a backend API call.
 
 ---
 
-## ⚗️ 5. A/B Testing (Simulated)
-
-Ran a mock test on CTA variations:
-
-| Version | CTA Text                        | Conversion Rate |
-|---------|---------------------------------|-----------------|
-| A       | “Join Beta Now – It's Free”     | 28%             |
-| B       | “Be One of the First 100 Users” | 42%             |
-
-**Insight:** Scarcity-based CTA boosted conversion. Future tests can include emoji use, button colors, etc.
-
----
-
-## ⚙️ 6. Setup Instructions
+## ⚙️ 5. Setup Instructions
 
 ### Prerequisites
 - Node.js installed
@@ -72,7 +59,7 @@ Ran a mock test on CTA variations:
 npm install
 
 
-## 5. Takeaways
+## 6. Takeaways
 
 - ✅ Framing EchoPal as a *friend* resonated better than framing it as a tool  
 - 📈 Scarcity-based CTA significantly improved conversion  
@@ -81,7 +68,7 @@ npm install
 
 ---
 
-## 6. 🛠️ Tools Used
+## 7. 🛠️ Tools Used
 
 - Frontend: HTML, CSS, JavaScript
 - Backend: Node.js, Express
@@ -91,13 +78,15 @@ npm install
 
 ---
 
-## 7. Future Plans
-🔐 Add email format validation + confirmation
-🤖 Customize GPT persona / fine-tuned behavior
-💾 Store persistent user chat history
-🗓️ Sync with Google Calendar
-📲 Make mobile responsive
-🌐 Deploy using Render, Vercel, or Replit
+## 8. Future Plans
+- 🔐 Add email format validation + confirmation
+- 🤖 Customize GPT persona / fine-tuned behavior
+- 💾 Store persistent user chat history
+- 🗓️ Sync with Google Calendar
+- 📲 Make mobile responsive
+- 🌐 Deploy using Render, Vercel, or Replit
+- Run an A/B test comparing different CTA button texts to optimize conversions.
+- Add tracking parameters to capture user interaction per variant.
 
 ## 💬 Why I Built This
 

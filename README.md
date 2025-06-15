@@ -68,13 +68,45 @@ npm install
 
 ---
 
-## 7. 🛠️ Tools Used
+## 7. 🛠️ Tools Used/Skills
 
-- Frontend: HTML, CSS, JavaScript
-- Backend: Node.js, Express
-- AI Model: OpenAI GPT-3.5 Turbo
-- Environment Config: dotenv
-- Storage: Local file (emails.txt)
+# 💻 Web Development
+- HTML5
+- CSS3
+- JavaScript
+- Node.js
+- Express.js
+
+# ⚙️ Backend / API Integration
+- REST APIs
+- OpenAI API
+- API Authentication
+- dotenv
+- JSON
+
+# 📦 Dev Tools
+- Git
+- GitHub
+- Visual Studio Code (VSCode)
+- npm
+
+# 🧠 AI / Machine Learning
+- GPT-3.5 Integration
+- Conversational AI
+- Prompt Engineering (Basic)
+
+# 🎯 Product & UX Skills
+- Landing Page Design
+- User Onboarding Flow
+- Form Handling & Validation
+- Email Capture
+- A/B Testing Concepts
+
+# 📊 Marketing / Growth
+- Growth Hacking
+- UTM Tracking
+- Conversion Rate Optimization (Basic)
+
 
 ---
 

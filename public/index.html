@@ -35,6 +35,13 @@
       </form>
       <p id="responseMessage"></p>
     </div>
+
+    <div class="chat-box">
+        <h2>Try It:</h2>
+        <input type="text" id="userInput" placeholder="Say something..." />
+        <button onclick="sendMessage()">Send</button>
+        <p id="botResponse"></p>
+    </div>
   </div>
 
   <footer>
@@ -63,5 +70,22 @@
       }
     });
   </script>
+    <script>
+    async function sendMessage() {
+        const input = document.getElementById("userInput").value;
+        const resElem = document.getElementById("botResponse");
+
+        resElem.textContent = "Thinking...";
+        const response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: input }),
+        });
+
+        const data = await response.json();
+        resElem.textContent = data.reply;
+    }
+    </script>
+
 </body>
 </html>

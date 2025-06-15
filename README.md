@@ -25,6 +25,9 @@ Built a modern, mobile-friendly landing page using **HTML/CSS/JS**.
 - 📥 Email signup form
 - 🤖 Chat preview section (powered by OpenAI API)
 - 🎯 CTA: “Join Our Beta”
+-🖼️ Front Page Preview
+
+![EchoPal Landing Page](./landing-page.png)
 
 ---
 

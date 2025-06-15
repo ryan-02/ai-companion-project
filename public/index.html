@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Companion Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Meet Your AI Companion</h1>
+    <p>Playful. Smart. Always There.</p>
+  </header>
+
+  <div class="container">
+    <h2>Why You'll Love It</h2>
+    <ul>
+      <li>✨ Emotional intelligence that grows with you</li>
+      <li>💬 Real conversations with memory and humor</li>
+      <li>🎮 Gamified interactions with levels and missions</li>
+      <li>📖 Stories, jokes, and AI-generated adventures</li>
+    </ul>
+
+    <h2>Tech Under the Hood</h2>
+    <ul>
+      <li>🤖 Powered by GPT-4 with fine-tuned behavior</li>
+      <li>🧠 Custom memory architecture using vector DB</li>
+      <li>🕹️ Built with React, Tailwind, and game-state logic</li>
+    </ul>
+
+    <div class="cta">
+      <form id="betaForm">
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <button type="submit">Join Our Beta</button>
+      </form>
+      <p id="responseMessage"></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Daedalia, Inc. | Made with 💜 at CMU
+  </footer>
+
+  <script>
+    document.getElementById("betaForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const responseMessage = document.getElementById("responseMessage");
+
+      try {
+        const res = await fetch("/signup", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        const data = await res.json();
+        responseMessage.textContent = data.message;
+      } catch (err) {
+        responseMessage.textContent = "Error submitting form. Try again later.";
+      }
+    });
+  </script>
+</body>
+</html>

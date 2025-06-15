@@ -1,67 +1,76 @@
-# 🎓 EchoPal – AI Study Companion Growth Test
+# EchoPal – AI Study Companion Prototype
 
-## 1. Product Concept
+## 🧠 1. Product Concept
 
 **Name:** EchoPal  
-**Type:** AI-powered study companion chatbot  
-**Audience:** College students (18–24)  
-**Pitch:** EchoPal acts like a supportive friend who keeps you focused, sends reminders, and turns studying into small, gamified missions.
+**Type:** AI-powered study buddy  
+**Audience:** College students (ages 18–24)  
+**Goal:** Help students stay focused and feel supported by simulating a friendly, motivational study partner.
 
 ### ✅ Core Features
-- 🤖 Conversational AI that sounds human
-- 🔔 Personalized study nudges and reminders
-- 🧠 Daily focus challenges to stay on track
-- 📅 Calendar integration (coming soon)
+- 🤖 Natural language AI chat (GPT-based)
+- ⏰ Personalized study reminders
+- 🎯 Daily focus challenges and rewards
+- 📅 Future: calendar/task sync and productivity stats
 
 ---
 
-## 2. Landing Page
+## 🌐 2. Landing Page
 
-Built a modern HTML/CSS landing page to intro EchoPal and test interest.
+Built a modern, mobile-friendly landing page using **HTML/CSS/JS**.
 
-### 🎯 Goals
-- Validate student interest
-- Track email signups via different sources
-- Test which CTA message works best
-
-### 🧱 Sections
-- Headline: “Meet EchoPal – Your Study Buddy with Personality”
-- Subtext: “Stay on track. Beat procrastination. Get encouragement from an AI that actually sounds human.”
-- Email capture form
-- Mock testimonials for social proof
-
-**Demo:** *Coming soon*
+### Page Sections
+- 🔥 Bold headline: “Meet EchoPal – Your Study Buddy with Personality”
+- 💬 Feature list with emojis
+- 📥 Email signup form
+- 🤖 Chat preview section (powered by OpenAI API)
+- 🎯 CTA: “Join Our Beta”
 
 ---
 
-## 3. Email Capture & UTM Tracking
+## ✉️ 3. Email Capture Setup
 
-Implemented a mock email form with JavaScript validation and used a Google Sheet backend to simulate tracking.
+Users can submit their email via a form. On submit:
+- Email is saved to `emails.txt`
+- Response message is displayed
+- Handled via Express backend
 
-### 📊 Simulated Sources
-- Instagram Ad
-- Discord Post
-- QR Code Flyer
-
-### 📥 Captured Fields
-- Email
-- `utm_campaign` source
-- Timestamp
+You can track user signups manually or connect to a database later.
 
 ---
 
-## 4. A/B CTA Test Results
+## 💬 4. GPT Chat Integration
 
-Tested two versions of the call-to-action:
+The chatbox connects to OpenAI’s GPT-3.5 via a backend API call.
+
+- Messages are sent to `/chat` via POST
+- Requires a valid OpenAI API key
+- Response is displayed in the chat bubble
+
+---
+
+## ⚗️ 5. A/B Testing (Simulated)
+
+Ran a mock test on CTA variations:
 
 | Version | CTA Text                        | Conversion Rate |
-|---------|----------------------------------|-----------------|
+|---------|---------------------------------|-----------------|
 | A       | “Join Beta Now – It's Free”     | 28%             |
 | B       | “Be One of the First 100 Users” | 42%             |
 
-**Result:** Scarcity-based CTA (Version B) performed better and will be used moving forward.
+**Insight:** Scarcity-based CTA boosted conversion. Future tests can include emoji use, button colors, etc.
 
 ---
+
+## ⚙️ 6. Setup Instructions
+
+### Prerequisites
+- Node.js installed
+- OpenAI API key (create one at [https://platform.openai.com](https://platform.openai.com))
+
+### Install Dependencies
+npm install
+
 
 ## 5. Takeaways
 
@@ -72,14 +81,23 @@ Tested two versions of the call-to-action:
 
 ---
 
-## 🛠️ Tools Used
+## 6. 🛠️ Tools Used
 
-- HTML/CSS – For UI layout
-- JavaScript – Form validation
-- Google Forms / Google Sheets – Mock backend
-- Canva – Visual and design mockups
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express
+- AI Model: OpenAI GPT-3.5 Turbo
+- Environment Config: dotenv
+- Storage: Local file (emails.txt)
 
 ---
+
+## 7. Future Plans
+🔐 Add email format validation + confirmation
+🤖 Customize GPT persona / fine-tuned behavior
+💾 Store persistent user chat history
+🗓️ Sync with Google Calendar
+📲 Make mobile responsive
+🌐 Deploy using Render, Vercel, or Replit
 
 ## 💬 Why I Built This
 

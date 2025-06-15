@@ -27,7 +27,7 @@ Built a modern, mobile-friendly landing page using **HTML/CSS/JS**.
 - 🎯 CTA: “Join Our Beta”
 -🖼️ Front Page Preview
 
-![EchoPal Landing Page](./landing-page.png)
+![EchoPal Landing Page](./ai-companion-front-page.png)
 
 ---
 
